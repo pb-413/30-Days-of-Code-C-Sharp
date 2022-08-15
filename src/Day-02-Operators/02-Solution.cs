@@ -26,6 +26,22 @@ class Result
 
     public static void solve(double meal_cost, int tip_percent, int tax_percent)
     {
+        
+        // calc tip 
+
+        double tip_cost = ((tip_percent/100) * meal_cost); 
+
+        // calc tax 
+
+        double tax_cost = ((tax_percent/100) * meal_cost); 
+
+        // clac total 
+
+        double total_cost = meal_cost + tip_cost + tax_cost; 
+
+        // print, rounding to the nearest int
+
+        Console.WriteLine("{0:0}",total_cost);
 
     }
 
