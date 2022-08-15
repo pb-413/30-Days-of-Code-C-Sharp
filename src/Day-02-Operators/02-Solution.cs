@@ -27,13 +27,29 @@ class Result
     public static void solve(double meal_cost, int tip_percent, int tax_percent)
     {
         
+        bool debug = true;
+        
         // calc tip 
 
         double tip_cost = ((tip_percent/100) * meal_cost); 
 
+        if (debug)
+        {
+
+            Console.WriteLine("DEBUG:" + double.Parse(tip_cost))
+
+        }
+
         // calc tax 
 
         double tax_cost = ((tax_percent/100) * meal_cost); 
+
+        if (debug)
+        {
+
+            Console.WriteLine("DEBUG:" + double.Parse(tax_cost))
+
+        }
 
         // clac total 
 
