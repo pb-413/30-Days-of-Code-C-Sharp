@@ -31,23 +31,23 @@ class Result
         
         // calc tip 
 
-        double tip_cost = ((tip_percent/100) * meal_cost); 
+        double tip_cost = ((tip_percent/100.0) * meal_cost); 
 
         if (debug)
         {
 
-            Console.WriteLine("DEBUG:" + double.Parse(tip_cost))
+            Console.WriteLine("DEBUG:" + (tip_cost));
 
         }
 
         // calc tax 
 
-        double tax_cost = ((tax_percent/100) * meal_cost); 
+        double tax_cost = ((tax_percent/100.0) * meal_cost); 
 
         if (debug)
         {
 
-            Console.WriteLine("DEBUG:" + double.Parse(tax_cost))
+            Console.WriteLine("DEBUG:" + (tax_cost));
 
         }
 
