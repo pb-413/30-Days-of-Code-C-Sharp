@@ -17,15 +17,18 @@ using System;
 class Solution
 {
 
+    ///<summary>
+    /// Method <c>printTenMutliples</c> takes in an integer from 2 to 20 inclusive and prints its first 10 multiples (1-10)
+    ///</summary>
     printTenMutliples(int input)
     {
-        
+        Console.WriteLine("Anything");
     }
 
     public static void Main(string[] args)
     {
         int n = Convert.ToInt32(Console.ReadLine().Trim());
 
-        printTenMultiples(n);
+        printTenMutliples(n);
     }
 }
