@@ -12,7 +12,7 @@ using System.Text.RegularExpressions;
 using System.Text;
 using System;
 
-enum weirdness
+enum Weirdness
 {
     StartWeirdness,
     Weird,
@@ -63,32 +63,32 @@ class Result
     public static void printWeirdness(int input)
     {
         
-        int resultWeirdness;
+        Weirdness resultWeirdness;
 
         if (isOdd(input) & 1 <= input)
         {
             //Odd is weird
-            resultWeirdness = weirdness.Weird;
+            resultWeirdness = Weirdness.Weird;
         }
         else if (2 <= input & input <= 5)
         {
             //This range is not weird
-            resultWeirdness = weirdness.NotWeird;
+            resultWeirdness = Weirdness.NotWeird;
         }
         else if (6 <= input & input <=20)
         {
             //This range is weird
-            resultWeirdness = weirdness.Weird;
+            resultWeirdness = Weirdness.Weird;
         }
         else if (21 <= input & input <=100)
         {
             //This range is not weird
-            resultWeirdness = weirdness.NotWeird;
+            resultWeirdness = Weirdness.NotWeird;
         }
         else
         {
             throw new OutOfProblemBoundsException("input for printWeirdness is out of expected range (1-100)");
-            resultWeirdness = weirdness.EndWeirdness;
+            resultWeirdness = Weirdness.EndWeirdness;
         }
 
         Console.WriteLine(Result.getWeirdness((int)resultWeirdness));
