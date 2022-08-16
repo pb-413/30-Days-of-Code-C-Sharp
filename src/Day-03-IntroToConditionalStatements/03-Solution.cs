@@ -91,7 +91,7 @@ class Result
             resultWeirdness = weirdness.EndWeirdness;
         }
 
-        Console.WriteLine(Result.getWeirdness(resultWeirdness));
+        Console.WriteLine(Result.getWeirdness((int)resultWeirdness));
     }
 }
 
