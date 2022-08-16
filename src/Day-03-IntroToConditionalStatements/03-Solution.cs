@@ -14,13 +14,31 @@ using System;
 
 enum weirdness
 {
-    Weird = "Weird",
-    NotWeird = "Not Weird"
-
+    StartWeirdness,
+    Weird,
+    NotWeird,
+    EndWeirdness
 }
 
 class Result
 {
+    public static string getWeirdness(int input)
+    {
+        if (input == 1)
+        {
+            return "Weird";
+        }
+        else if (input == 2)
+        {
+            return "Not Weird";
+        }
+        else
+        {
+            //IDK if this actually works, but here it is
+            throw exception;
+        }
+    }
+    
     public static bool isOdd(int input)
     {
         if (input % 2 == 1)
@@ -39,30 +57,35 @@ class Result
     public static void printWeirdness(int input)
     {
         
+        int resultWeirdness;
+
         if (isOdd(input) & 1 <= input)
         {
             //Odd is weird
-            Console.WriteLine(weirdness.Weird);
+            resultWeirdness = weirdness.Weird;
         }
         else if (2 <= input & input <= 5)
         {
             //This range is not weird
-            Console.WriteLine(weirdness.NotWeird);
+            resultWeirdness = weirdness.NotWeird;
         }
         else if (6 <= input & input <=20)
         {
             //This range is weird
-            Console.WriteLine(weirdness.Weird);
+            resultWeirdness = weirdness.Weird;
         }
         else if (21 <= input & input <=100)
         {
             //This range is not weird
-            Console.WriteLine(weirdness.NotWeird);
+            resultWeirdness = weirdness.NotWeird;
         }
         else
         {
             Console.WriteLine("This is out of bounds for this problem");
+            resultWeirdness = weirdness.EndWeirdness;
         }
+
+        Console.WriteLine(Result.getWeirdness(resultWeirdness));
     }
 }
 
