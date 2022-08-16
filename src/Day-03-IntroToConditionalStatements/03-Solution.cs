@@ -36,9 +36,10 @@ class Result
     ///<summary>
     /// Method <c>isWeird</c> takes in an integer from 1 to 100 inclusive
     ///</summary>
-    public static void isWeird(int input)
+    public static void printWeirdness(int input)
     {
-        if (isOdd(input))
+        
+        if (isOdd(input) & 1 <= input)
         {
             //Odd is weird
             Console.WriteLine(weirdness.Weird);
@@ -48,10 +49,19 @@ class Result
             //This range is not weird
             Console.WriteLine(weirdness.NotWeird);
         }
-        else if (/*TODO*/)
+        else if (6 <= input & input <=20)
+        {
+            //This range is weird
+            Console.WriteLine(weirdness.Weird);
+        }
+        else if (21 <= input & input <=100)
         {
             //This range is not weird
             Console.WriteLine(weirdness.NotWeird);
+        }
+        else
+        {
+            Console.WriteLine("This is out of bounds for this problem");
         }
     }
 }
@@ -61,5 +71,7 @@ class Solution
     public static void Main(string[] args)
     {
         int N = Convert.ToInt32(Console.ReadLine().Trim());
+
+        Result.printWeirdness(N);
     }
 }
