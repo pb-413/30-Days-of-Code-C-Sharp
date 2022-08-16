@@ -20,6 +20,13 @@ enum weirdness
     EndWeirdness
 }
 
+class OutOfProblemBoundsException : Exception
+{
+    public OutOfProblemBoundsException(string message)
+    {
+    }
+}
+
 class Result
 {
     public static string getWeirdness(int input)
@@ -34,8 +41,7 @@ class Result
         }
         else
         {
-            //IDK if this actually works, but here it is
-            throw exception;
+            throw new OutOfProblemBoundsException("getWeridness could not resolve to expected output");
         }
     }
     
@@ -81,7 +87,7 @@ class Result
         }
         else
         {
-            Console.WriteLine("This is out of bounds for this problem");
+            throw new OutOfProblemBoundsException("input for printWeirdness is out of expected range (1-100)");
             resultWeirdness = weirdness.EndWeirdness;
         }
 
