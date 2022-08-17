@@ -20,9 +20,14 @@ class Solution
     ///<summary>
     /// Method <c>printTenMutliples</c> takes in an integer from 2 to 20 inclusive and prints its first 10 multiples (1-10)
     ///</summary>
-    printTenMutliples(int input)
+    public static void printTenMutliples(int input)
     {
-        Console.WriteLine("Anything");
+        for (int i = 1; i <=10; i++)
+        {
+            result = input * i;
+            Console.WriteLine($"{n} x {i} = {result}.");
+        }
+        
     }
 
     public static void Main(string[] args)
