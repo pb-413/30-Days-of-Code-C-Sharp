@@ -25,7 +25,7 @@ class Solution
         for (int i = 1; i <=10; i++)
         {
             int result = input * i;
-            Console.WriteLine($"{input} x {i} = {result}.");
+            Console.WriteLine($"{input} x {i} = {result}");
         }
     }
 
