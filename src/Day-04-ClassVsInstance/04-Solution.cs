@@ -32,7 +32,7 @@ class Person {
         {
             Console.WriteLine("You are a teenager.");
         }
-        else if(age <= 30)
+        else //no need to say age <=30, you can age past the max input
         {
             Console.WriteLine("You are old.");
         }
