@@ -27,7 +27,6 @@ class Solution
             result = input * i;
             Console.WriteLine($"{n} x {i} = {result}.");
         }
-        
     }
 
     public static void Main(string[] args)
