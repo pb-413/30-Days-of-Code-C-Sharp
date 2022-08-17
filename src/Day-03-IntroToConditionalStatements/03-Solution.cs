@@ -58,7 +58,7 @@ class Result
     }
     
     ///<summary>
-    /// Method <c>isWeird</c> takes in an integer from 1 to 100 inclusive
+    /// Method <c>printWeirdness</c> takes in an integer from 1 to 100 inclusive
     ///</summary>
     public static void printWeirdness(int input)
     {
