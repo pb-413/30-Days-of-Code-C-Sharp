@@ -28,7 +28,7 @@ class Solution {
     {
         //build string(s) w/ loop + if-else
 
-        string evens, odds = ""; 
+        string evens = "", odds = ""; 
 
         for (int characterPosition = 0; characterPosition < input.Length; characterPosition++)
         {
