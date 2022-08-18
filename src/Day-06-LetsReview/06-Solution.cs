@@ -1,13 +1,29 @@
+/*
+
+Constraints
+- T - #of test cases ranges from 1 to 10 
+- S - strings to process range in length from 2 to 10000
+
+*/
+
+
 using System;
 using System.Collections.Generic;
 using System.IO;
 class Solution {
 
-    public static void printEvenThenOddCharacters()
+    public static void printEvenThenOddCharacters(string input)
     {
         //build string(s) w/ loop + if-else
 
+        for (int characterPosition = 0; characterPosition < input.Length; characterPosition++)
+        {
+            
+        }
+
         //print string(s)
+
+
     }
 
     static void Main(String[] args) {
