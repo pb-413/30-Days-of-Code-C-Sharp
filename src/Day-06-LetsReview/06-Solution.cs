@@ -12,13 +12,28 @@ using System.Collections.Generic;
 using System.IO;
 class Solution {
 
+    public static bool isOdd(int input)
+    {
+        if (input % 2 == 1)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
     public static void printEvenThenOddCharacters(string input)
     {
         //build string(s) w/ loop + if-else
 
         for (int characterPosition = 0; characterPosition < input.Length; characterPosition++)
         {
-            
+            if (isOdd(characterPosition))
+            {
+                
+            }
         }
 
         //print string(s)
