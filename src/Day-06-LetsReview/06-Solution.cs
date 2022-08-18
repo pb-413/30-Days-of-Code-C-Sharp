@@ -28,16 +28,24 @@ class Solution {
     {
         //build string(s) w/ loop + if-else
 
+        string evens, odds = ""; 
+
         for (int characterPosition = 0; characterPosition < input.Length; characterPosition++)
         {
+            
             if (isOdd(characterPosition))
             {
-                
+                odds += input[characterPosition];
+            }
+            else
+            {
+                evens += input[characterPosition];
             }
         }
 
         //print string(s)
 
+        Console.WriteLine($"{evens} {odds}");
 
     }
 
