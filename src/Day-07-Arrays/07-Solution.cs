@@ -28,11 +28,11 @@ class Solution
     public static void printReverse(List<int> input)
     {
         
-        for(int itemPosition = input.Count(); itemPosition > 0; itemPosition--)
+        for(int iteration = 0; iteration < input.Count(); iteration++)
         {
-            //Constole.WriteLine(input.RemoveAt(-1));
-            Console.Write(input[itemPosition]);
-            if (itemPosition > 1)
+            Constole.Write(input.RemoveAt(-1));
+            
+            if (input.Count() > 0)
             {
                 Console.Write(" ");
             }
