@@ -28,7 +28,9 @@ class Solution
     public static void printReverse(List<int> input)
     {
         
-        for(int iteration = 0; iteration < input.Count(); iteration++)
+        int originalLength = input.Count();
+
+        for(int iteration = 0; iteration < originalLength; iteration++)
         {
             Console.Write(input[input.Count() - 1]);
             input.RemoveAt(input.Count() - 1);
