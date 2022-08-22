@@ -30,7 +30,7 @@ class Solution
         
         for(int iteration = 0; iteration < input.Count(); iteration++)
         {
-            Constole.Write(input.RemoveAt(-1));
+            Console.Write(input.RemoveAt(-1));
             
             if (input.Count() > 0)
             {
