@@ -24,13 +24,14 @@ A[i] - the ith element of the array ranges from 1 to 10000
 
 class Solution
 {
-
+    
     public static void printReverse(List<int> input)
     {
         
         for(int iteration = 0; iteration < input.Count(); iteration++)
         {
-            Console.Write(input.RemoveAt(-1));
+            Console.Write(input[-1]);
+            input.RemoveAt(-1);
             
             if (input.Count() > 0)
             {
