@@ -30,8 +30,8 @@ class Solution
         
         for(int iteration = 0; iteration < input.Count(); iteration++)
         {
-            Console.Write(input[input.Length - 1]);
-            input.RemoveAt(input.Length - 1);
+            Console.Write(input[input.Count() - 1]);
+            input.RemoveAt(input.Count() - 1);
             
             if (input.Count() > 0)
             {
