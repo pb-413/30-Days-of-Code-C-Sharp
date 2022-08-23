@@ -4,9 +4,9 @@ using System.IO;
 
 class Solution {
     
-    public static void queryPhonebook(string query, Dictionary phonebook)
+    public static void queryPhonebook(string query, Dictionary<string,int> phonebookDict)
     {
-        Console.WriteLine(phonebook[query]);
+        Console.WriteLine(phonebookDict[query]);
 
         //TODO process null return (i'm guessing)
     }
