@@ -28,7 +28,11 @@ class Solution {
         {
             //TODO process input and prepare for entry into phonebook (dict)
             
-            phonebook.Add();
+            List<string> inputPhoneRecordAsList = Console.ReadLine().TrimEnd().Split(' ').ToList();
+            string name = inputPhoneRecordAsList[0];
+            int phoneNumber = Convert.ToInt32(inputPhoneRecordAsList[1]);
+
+            phonebook.Add(name, phoneNumber);
         }
 
         
