@@ -39,8 +39,14 @@ class Solution {
         /*Read in quieries for the phonebook and return results*/
 
         //TODO while there is still input
-        string query = ""; //TODO parse input
-        queryPhonebook(query, phonebook);
+        string query = Console.ReadLine();
+        
+        while(query)
+        {
+            queryPhonebook(query, phonebook);
+            
+            query = Console.ReadLine();
+        }
     
     }
 }
