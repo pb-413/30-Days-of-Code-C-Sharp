@@ -22,7 +22,7 @@ class Solution {
         
         /*Read in N # of entries and create the phonebook*/
 
-        Dictionary<string,int> phonebook;
+        Dictionary<string,int> phonebook = new Dictionary<string, int>();
 
         for (int i = 0; i < numEntries; i++) 
         {
