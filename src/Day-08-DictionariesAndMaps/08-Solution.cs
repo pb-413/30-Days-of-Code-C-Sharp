@@ -4,6 +4,11 @@ using System.IO;
 
 class Solution {
     
+    public static bool isEmpty(string input)
+    {
+        return input.CompareTo("");
+    }
+    
     public static void queryPhonebook(string query, Dictionary<string,int> phonebookDict)
     {
         Console.WriteLine(phonebookDict[query]);
@@ -41,7 +46,7 @@ class Solution {
         //TODO while there is still input
         string query = Console.ReadLine();
         
-        while(query)
+        while(!isEmpty(query))
         {
             queryPhonebook(query, phonebook);
             
