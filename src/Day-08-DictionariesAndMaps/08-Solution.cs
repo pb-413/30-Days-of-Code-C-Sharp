@@ -6,7 +6,7 @@ class Solution {
     
     public static bool isEmpty(string input)
     {
-        return input.CompareTo("");
+        return Convert.ToBoolean(input);
     }
     
     public static void queryPhonebook(string query, Dictionary<string,int> phonebookDict)
