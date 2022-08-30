@@ -8,6 +8,7 @@ class Solution {
     {
         
         int number;
+        bool erroring = false;
         
         try
         {
@@ -16,8 +17,10 @@ class Solution {
         catch (System.Collections.Generic.KeyNotFoundException e )
         {
             Console.WriteLine("Not found");
+            erroring = true;
         }
-        finally
+
+        if (!erroring)
         {
             Console.WriteLine($"{query}={number}");
         }
