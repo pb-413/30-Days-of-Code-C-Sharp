@@ -7,7 +7,7 @@ class Solution {
     public static void queryPhonebook(string query, Dictionary<string,int> phonebookDict)
     {
         
-        int number = null;
+        int number = 0;
         bool erroring = false;
         
         try
