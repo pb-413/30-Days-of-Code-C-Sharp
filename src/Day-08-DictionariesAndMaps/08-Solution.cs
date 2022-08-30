@@ -7,11 +7,11 @@ class Solution {
     public static void queryPhonebook(string query, Dictionary<string,int> phonebookDict)
     {
         
-        string result;
+        int number;
         
         try
         {
-            result = phonebookDict[query];
+            number = (string) phonebookDict[query];
         }
         catch (System.Collections.Generic.KeyNotFoundException e )
         {
@@ -19,7 +19,7 @@ class Solution {
         }
         finally
         {
-            Console.WriteLine($"{query}={result}");
+            Console.WriteLine($"{query}={number}");
         }
                 
     }
