@@ -6,9 +6,16 @@ class Solution {
        
     public static void queryPhonebook(string query, Dictionary<string,int> phonebookDict)
     {
-        Console.WriteLine(phonebookDict[query]);
-
-        //TODO process null return (i'm guessing)
+        
+        try
+        {
+            Console.WriteLine(phonebookDict[query]);
+        }
+        catch (System.Collections.Generic.KeyNotFoundException e )
+        {
+            Console.WriteLine("Not found");
+        }
+                
     }
     
     static void Main(String[] args) {
