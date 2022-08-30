@@ -7,7 +7,7 @@ class Solution {
     public static void queryPhonebook(string query, Dictionary<string,int> phonebookDict)
     {
 
-        //C# Documentation more efficient than what I had?
+        //C# Documentation more efficient than what I had? - yep
         int value = 0;
         if (phonebookDict.TryGetValue(query, out value))
         {
