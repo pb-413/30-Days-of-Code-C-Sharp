@@ -9,7 +9,7 @@ class Solution {
         
         try
         {
-            Console.WriteLine(phonebookDict[query]);
+            Console.WriteLine($"{query}={phonebookDict[query]}");
         }
         catch (System.Collections.Generic.KeyNotFoundException e )
         {
