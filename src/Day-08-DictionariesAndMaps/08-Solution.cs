@@ -11,7 +11,7 @@ class Solution {
         
         try
         {
-            number = (string) phonebookDict[query];
+            number = phonebookDict[query];
         }
         catch (System.Collections.Generic.KeyNotFoundException e )
         {
