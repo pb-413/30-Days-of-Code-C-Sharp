@@ -6,23 +6,16 @@ class Solution {
        
     public static void queryPhonebook(string query, Dictionary<string,int> phonebookDict)
     {
-        
-        int number = 0;
-        bool erroring = false;
-        
-        try
+
+        //C# Documentation more efficient than what I had?
+        string value = 0;
+        if (phonebookDict.TryGetValue(query,out value))
         {
-            number = phonebookDict[query];
+            Console.WriteLine($"{query}={value}");
         }
-        catch (System.Collections.Generic.KeyNotFoundException e )
+        else
         {
             Console.WriteLine("Not found");
-            erroring = true;
-        }
-
-        if (!erroring)
-        {
-            Console.WriteLine($"{query}={number}");
         }
                 
     }
