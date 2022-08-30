@@ -8,8 +8,8 @@ class Solution {
     {
 
         //C# Documentation more efficient than what I had?
-        string value = 0;
-        if (phonebookDict.TryGetValue(query,out value))
+        int value = 0;
+        if (phonebookDict.TryGetValue(query, out value))
         {
             Console.WriteLine($"{query}={value}");
         }
@@ -35,7 +35,7 @@ class Solution {
 
         for (int i = 0; i < numEntries; i++) 
         {
-            //TODO process input and prepare for entry into phonebook (dict)
+            //Process input and prepare for entry into phonebook (dict)
             
             List<string> inputPhoneRecordAsList = Console.ReadLine().TrimEnd().Split(' ').ToList();
             string name = inputPhoneRecordAsList[0];
@@ -47,7 +47,6 @@ class Solution {
         
         /*Read in quieries for the phonebook and return results*/
 
-        //TODO while there is still input
         string query = Console.ReadLine();
         
         while(!string.IsNullOrEmpty(query))
