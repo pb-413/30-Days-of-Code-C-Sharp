@@ -19,11 +19,15 @@ class Solution
 
     public class CustomNumber
     {
+        int decimalRepresentation;
+        string binaryRepresentation;
+        int maxConsecutiveOnesInBinaryRepresentation;
+        
         public CustomNumber(int input)
         {
-            int decimalRepresentation = input;
-            string binaryRepresentation = Convert.ToString(decimalRepresentation, 2); // UNDONE cast binary
-            int maxConsecutiveOnesInBinaryRepresentation = GetMaxConsecutiveOnes(binaryRepresentation);
+            decimalRepresentation = input;
+            binaryRepresentation = Convert.ToString(decimalRepresentation, 2); // UNDONE cast binary
+            maxConsecutiveOnesInBinaryRepresentation = GetMaxConsecutiveOnes(binaryRepresentation);
         }
 
         public static int GetMaxConsecutiveOnes(string binaryNumber)
