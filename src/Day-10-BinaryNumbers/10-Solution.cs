@@ -30,7 +30,7 @@ class Solution
             maxConsecutiveOnesInBinaryRepresentation = GetMaxConsecutiveOnes(binaryRepresentation);
         }
 
-        public static int GetMaxConsecutiveOnes(string binaryNumber)
+        public int GetMaxConsecutiveOnes(string binaryNumber)
         {
             string [] arrayOfSpans = binaryNumber.Split("0");
 
@@ -49,7 +49,7 @@ class Solution
             return maxSpan;
         }
 
-        public static void PrintMaxConsecutiveOnesInBinaryRepresentation()
+        public void PrintMaxConsecutiveOnesInBinaryRepresentation()
         {
             Console.WriteLine(maxConsecutiveOnesInBinaryRepresentation);
         }
