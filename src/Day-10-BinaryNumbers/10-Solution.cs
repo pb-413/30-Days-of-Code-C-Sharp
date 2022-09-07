@@ -17,7 +17,7 @@ using System;
 class Solution
 {
 
-    public static class CustomNumber
+    public class CustomNumber
     {
         public CustomNumber(int input)
         {
