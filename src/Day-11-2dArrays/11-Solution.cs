@@ -12,7 +12,7 @@ using System.Text.RegularExpressions;
 using System.Text;
 using System;
 
-
+const int debugFlag = true;
 
 class Solution
 {
@@ -24,6 +24,11 @@ class Solution
         for (int i = 0; i < 6; i++)
         {
             arr.Add(Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arrTemp => Convert.ToInt32(arrTemp)).ToList());
+
+            if(debugFlag)
+            {
+                print (arr);
+            }
         }
     }
 }
