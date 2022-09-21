@@ -12,10 +12,11 @@ using System.Text.RegularExpressions;
 using System.Text;
 using System;
 
-const bool debugFlag = true;
-
 class Solution
 {
+
+    const bool debugFlag = true;
+
     public static void Main(string[] args)
     {
 
