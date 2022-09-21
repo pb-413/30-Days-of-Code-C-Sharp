@@ -12,7 +12,7 @@ using System.Text.RegularExpressions;
 using System.Text;
 using System;
 
-const int debugFlag = true;
+const bool debugFlag = true;
 
 class Solution
 {
