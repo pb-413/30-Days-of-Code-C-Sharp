@@ -27,7 +27,7 @@ class Solution
 
             if(debugFlag)
             {
-                print (arr);
+                Console.WriteLine(arr);
             }
         }
     }
